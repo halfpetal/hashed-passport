@@ -1,10 +1,10 @@
 <?php
 
-namespace Ssmulders\HashedPassport\Observers;
+namespace Halfpetal\HashedPassport\Observers;
 
 use Laravel\Passport\Client;
-use Ssmulders\HashedPassport\HashedPassport;
-use Ssmulders\HashedPassport\Traits\HashesIds;
+use Halfpetal\HashedPassport\HashedPassport;
+use Halfpetal\HashedPassport\Traits\HashesIds;
 
 class ClientObserver {
 

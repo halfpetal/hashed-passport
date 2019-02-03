@@ -1,12 +1,12 @@
 <?php
 
-namespace Ssmulders\HashedPassport\Commands;
+namespace Halfpetal\HashedPassport\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use Ssmulders\HashedPassport\Traits\HandlesEncryptedSecrets;
+use Halfpetal\HashedPassport\Traits\HandlesEncryptedSecrets;
 
 class Uninstall extends Command
 {
@@ -47,7 +47,7 @@ class Uninstall extends Command
         $this->info('Hashed-passport removal completed.');
         $this->info('');
         $this->info('You can now safely run:');
-        $this->info('composer remove ssmulders/hashed-passport');
+        $this->info('composer remove halfpetal/hashed-passport');
         $this->info('');
         $this->info('');
     }

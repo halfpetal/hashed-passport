@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssmulders\HashedPassport;
+namespace Halfpetal\HashedPassport;
 
 class HashedPassport {
 

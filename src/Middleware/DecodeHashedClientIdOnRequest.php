@@ -1,10 +1,10 @@
 <?php
 
-namespace Ssmulders\HashedPassport\Middleware;
+namespace Halfpetal\HashedPassport\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Ssmulders\HashedPassport\Traits\HashesIds;
+use Halfpetal\HashedPassport\Traits\HashesIds;
 
 class DecodeHashedClientIdOnRequest
 {

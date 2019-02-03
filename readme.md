@@ -43,7 +43,7 @@ Installation
 
 ##### Hashed Client IDs
 
-* Install via composer `composer require ssmulders/hashed-passport`
+* Install via composer `composer require halfpetal/hashed-passport`
 
 That's it! If you haven't tinkered with any default Laravel Passport routes, you're all set. 
 
@@ -57,7 +57,7 @@ That's it! If you haven't tinkered with any default Laravel Passport routes, you
 Voila! Your secrets are now stored with encryption and automatically decrypted after a DB retrieval.
 
 ##### OPTIONAL: Overwrite the APP_KEY Hashing Salt
-* Run `php artisan vendor:publish --provider="Ssmulders\HashedPassport\HashedPassportServiceProvider"` 
+* Run `php artisan vendor:publish --provider="Halfpetal\HashedPassport\HashedPassportServiceProvider"` 
  
 Now update the `salt` key in `config/hashed-passport.php` with a custom string.
 
@@ -123,7 +123,7 @@ Should support for hashed IDs and encrypted secrets be added to Laravel Passport
 
 Run `php artisan hashed_passport:uninstall`  to revert back to plain text secrets in your database.
 
-Run `composer remove ssmulders/hashed-passport` to remove the package.
+Run `composer remove halfpetal/hashed-passport` to remove the package.
 
 Remove `HashedPassport::withEncryption();` from your `AppServiceProvider`
 

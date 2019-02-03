@@ -1,12 +1,12 @@
 <?php
 
-namespace Ssmulders\HashedPassport\Traits;
+namespace Halfpetal\HashedPassport\Traits;
 
 use Hashids\Hashids;
 
 /**
  * Trait HashesIds
- * @package Ssmulders\HashedPassport
+ * @package Halfpetal\HashedPassport
  *
  * Uses the configured salt to hash and unhash the Passport Client's ID
  */

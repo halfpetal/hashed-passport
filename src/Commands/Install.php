@@ -1,12 +1,12 @@
 <?php
 
-namespace Ssmulders\HashedPassport\Commands;
+namespace Halfpetal\HashedPassport\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use Ssmulders\HashedPassport\Traits\HandlesEncryptedSecrets;
+use Halfpetal\HashedPassport\Traits\HandlesEncryptedSecrets;
 
 class Install extends Command
 {

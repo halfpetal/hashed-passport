@@ -1,13 +1,13 @@
 <?php
 
-namespace Ssmulders\HashedPassport;
+namespace Halfpetal\HashedPassport;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
-use Ssmulders\HashedPassport\Commands\Install;
-use Ssmulders\HashedPassport\Commands\Uninstall;
-use Ssmulders\HashedPassport\Observers\ClientObserver;
+use Halfpetal\HashedPassport\Commands\Install;
+use Halfpetal\HashedPassport\Commands\Uninstall;
+use Halfpetal\HashedPassport\Observers\ClientObserver;
 
 class HashedPassportServiceProvider extends ServiceProvider
 {
@@ -116,7 +116,7 @@ class HashedPassportServiceProvider extends ServiceProvider
     private function register_middleware(Router $router)
     {
         $router->middlewareGroup('hashed_passport', [
-            \Ssmulders\HashedPassport\Middleware\DecodeHashedClientIdOnRequest::class,
+            \Halfpetal\HashedPassport\Middleware\DecodeHashedClientIdOnRequest::class,
         ]);
     }
 }

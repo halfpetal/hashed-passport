@@ -1,6 +1,6 @@
 <?php
 
-namespace Ssmulders\HashedPassport\Traits;
+namespace Halfpetal\HashedPassport\Traits;
 
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Support\Collection;
@@ -10,7 +10,7 @@ use Illuminate\Contracts\Encryption\DecryptException;
 
 /**
  * Trait EncryptsSecrets
- * @package Ssmulders\HashedPassport
+ * @package Halfpetal\HashedPassport
  *
  * For easy encrypting / decrypting of the oAuth client secrets.
  */
