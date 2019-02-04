@@ -34,6 +34,8 @@ class ClientObserver {
      */
     public function saving(Client $oauth_client)
     {
+        $oauth_client->__unset('client_id');
+        
         if (HashedPassport::$withEncryption)
         {
             $oauth_client->setAttribute('secret', encrypt($oauth_client->getAttribute('secret')));
